@@ -1,0 +1,51 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/snippetTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/share"
+            android:layout_width="@dimen/forty_eight_dp"
+            android:layout_height="@dimen/forty_eight_dp"
+            android:layout_marginBottom="@dimen/eight_dp_margin"
+            android:layout_marginEnd="@dimen/eight_dp_margin"
+            android:layout_marginStart="@dimen/eight_dp_margin"
+            android:layout_marginTop="@dimen/eight_dp_margin"
+            android:background="@drawable/btn_ripple" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/help"
+            android:layout_width="@dimen/forty_eight_dp"
+            android:layout_height="@dimen/forty_eight_dp"
+            android:layout_marginBottom="@dimen/eight_dp_margin"
+            android:layout_marginEnd="@dimen/eight_dp_margin"
+            android:layout_marginTop="@dimen/eight_dp_margin"
+            android:layout_toEndOf="@id/share"
+            android:background="@drawable/btn_ripple" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/rate"
+            android:layout_width="@dimen/forty_eight_dp"
+            android:layout_height="@dimen/forty_eight_dp"
+            android:layout_marginBottom="@dimen/eight_dp_margin"
+            android:layout_marginEnd="@dimen/eight_dp_margin"
+            android:layout_marginTop="@dimen/eight_dp_margin"
+            android:layout_toEndOf="@id/help"
+            android:background="@drawable/btn_ripple" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/setting"
+            android:layout_width="@dimen/forty_eight_dp"
+            android:layout_height="@dimen/forty_eight_dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/eight_dp_margin"
+            android:layout_marginEnd="@dimen/eight_dp_margin"
+            android:layout_marginStart="@dimen/eight_dp_margin"
+            android:layout_marginTop="@dimen/eight_dp_margin"
+            android:background="@drawable/btn_ripple" />
+
+    </RelativeLayout>
+
+</merge>

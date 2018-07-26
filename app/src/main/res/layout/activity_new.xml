@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/snippet_top_bar" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relaxed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:layout_marginEnd="@dimen/thirty_two_dp_margin"
+            android:layout_marginStart="@dimen/thirty_two_dp_margin"
+            android:background="@drawable/btn_round_ripple"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/relaxedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/relaxed" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/relaxedCountTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relaxedTextView"
+                android:gravity="center"
+                android:text="@string/_3_digits" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/normal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:layout_marginEnd="@dimen/thirty_two_dp_margin"
+            android:layout_marginStart="@dimen/thirty_two_dp_margin"
+            android:background="@drawable/btn_round_ripple"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/normalTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/normal" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/normalCountTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/normalTextView"
+                android:gravity="center"
+                android:text="@string/_4_digits" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/skilled"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:layout_marginEnd="@dimen/thirty_two_dp_margin"
+            android:layout_marginStart="@dimen/thirty_two_dp_margin"
+            android:background="@drawable/btn_round_ripple"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/skilledTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/skilled" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/skilledCountTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skilledTextView"
+                android:gravity="center"
+                android:text="@string/_5_digits" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

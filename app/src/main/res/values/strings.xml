@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BullsAndCows</string>
+    <string name="resume">resume</string>
+    <string name="new_game">new game</string>
+    <string name="high_score">high Score</string>
+    <string name="exit">exit</string>
+    <string name="relaxed">relaxed</string>
+    <string name="_3_digits">3 digits</string>
+    <string name="normal">normal</string>
+    <string name="_4_digits">4 digits</string>
+    <string name="skilled">skilled</string>
+    <string name="_5_digits">5 digits</string>
+</resources>

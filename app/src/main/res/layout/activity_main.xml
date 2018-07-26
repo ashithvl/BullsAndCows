@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/snippet_top_bar" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/resume"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:layout_marginEnd="@dimen/thirty_two_dp_margin"
+            android:layout_marginStart="@dimen/thirty_two_dp_margin"
+            android:background="@drawable/btn_round_ripple"
+            android:text="@string/resume" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/new_game"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:layout_marginEnd="@dimen/thirty_two_dp_margin"
+            android:layout_marginStart="@dimen/thirty_two_dp_margin"
+            android:background="@drawable/btn_round_ripple"
+            android:text="@string/new_game" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/high_score"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:layout_marginEnd="@dimen/thirty_two_dp_margin"
+            android:layout_marginStart="@dimen/thirty_two_dp_margin"
+            android:background="@drawable/btn_round_ripple"
+            android:text="@string/high_score" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:layout_marginEnd="@dimen/thirty_two_dp_margin"
+            android:layout_marginStart="@dimen/thirty_two_dp_margin"
+            android:background="@drawable/btn_round_ripple"
+            android:text="@string/exit" />
+
+    </LinearLayout>
+
+</RelativeLayout>
